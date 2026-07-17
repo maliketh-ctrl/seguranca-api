@@ -11,18 +11,22 @@
     "categoria": "Proteção Visual",
     "ca": "67890"
   },
-
-{
+  {
     "id": 3,
     "nome": "Uniforme",
     "categoria": "Proteção do Corpo",
     "ca": "41411"
   },
-
   {
     "id": 4,
     "nome": "Capacete de Proteção",
     "categoria": "Proteção da Cabeça",
     "ca": "61611"
+  },
+  {
+    "id": 5,
+    "nome": "roupas",
+    "categoria": "corpo",
+    "ca": "1234"
   }
 ]

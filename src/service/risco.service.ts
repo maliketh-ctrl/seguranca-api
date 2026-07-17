@@ -1,14 +1,12 @@
 import { Injectable } from '@nestjs/common';
-//  import * as fs from 'fs';
-import { EpiRepository } from '../repository/epi.repository';
+import { RiscoRepository } from 'src/repository/risco.repository';
 
 @Injectable()
-export class AppService {
-  constructor(private repository: EpiRepository) { }
-
+export class RiscoService {
+  constructor(private readonly repository: RiscoRepository) {}
 
   getHello(): string {
-    return 'Alô mundo!'
+    return 'Alô mundo!';
   }
 
   getDados() {
@@ -18,11 +16,9 @@ export class AppService {
   getEpiById(id: number) {
     return this.repository.findById(id);
   }
+
   create(epi: any) { return this.repository.create(epi); }
   delete(id: number) { return this.repository.delete(id); }
   update(id: number, epi: any) { return this.repository.update(id, epi); }
   patch(id: number, epi: any) { return this.repository.patch(id, epi); }
-
-
-
 }
